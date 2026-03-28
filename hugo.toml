@@ -1,0 +1,65 @@
+baseURL = "https://y0ung-e.github.io/"
+languageCode = "zh-cn"
+theme = "re-terminal"
+paginate = 5
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "green"
+  showMenuItems = 3
+  fullWidthTheme = false
+  centerTheme = true
+  autoCover = true
+  showLastUpdated = false
+  readingTime = true
+  Toc = true
+
+[params.twitter]
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    title = "y0ung-e"
+    subtitle = "Context is all you need?"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "更多"
+    readMore = "阅读全文"
+    readOtherPosts = "阅读其他文章"
+    newerPosts = "更新的文章"
+    olderPosts = "更早的文章"
+    missingContentMessage = "页面未找到..."
+    missingBackButtonLabel = "返回首页"
+    minuteReadingTime = "分钟阅读"
+    words = "字"
+
+    [languages.zh.params.logo]
+      logoText = "y0ung-e"
+      logoHomeLink = "/"
+
+    [[languages.zh.menu.main]]
+      identifier = "about"
+      name = "关于"
+      url = "/about"
+    [[languages.zh.menu.main]]
+      identifier = "tags"
+      name = "标签"
+      url = "/tags"
+    [[languages.zh.menu.main]]
+      identifier = "archives"
+      name = "归档"
+      url = "/archives"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["$$", "$$"], ["\\[", "\\]"]]
+          inline = [["$", "$"], ["\\(", "\\)"]]
