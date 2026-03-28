@@ -1,7 +1,7 @@
 {{ if .Params.math }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.21/katex.min.css" crossorigin="anonymous">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.21/katex.min.js" crossorigin="anonymous"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.21/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ "lib/katex/katex.min.css" | absURL }}">
+<script defer src="{{ "lib/katex/katex.min.js" | absURL }}"></script>
+<script defer src="{{ "lib/katex/contrib/auto-render.min.js" | absURL }}"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     if (typeof renderMathInElement === "undefined") return;
